@@ -1,16 +1,16 @@
+import styled from 'styled-components';
+import Layout from './contacts/Layout';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <WrapperStyled>
+      <Layout />
+    </WrapperStyled>
   );
 };
+
+const WrapperStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
